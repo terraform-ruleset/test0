@@ -1,0 +1,18 @@
+# Global code owners - these users/teams will be requested for review on all PRs
+* @terraform-ruleset/admins
+
+# Terraform configuration files
+*.tf @terraform-ruleset/terraform-team
+*.tfvars @terraform-ruleset/terraform-team
+
+# GitHub workflows and configuration
+.github/ @terraform-ruleset/devops-team
+
+# Documentation
+*.md @terraform-ruleset/docs-team
+docs/ @terraform-ruleset/docs-team
+
+# Root level configuration files
+/.gitignore @terraform-ruleset/admins
+/LICENSE @terraform-ruleset/admins
+/README.md @terraform-ruleset/docs-team
